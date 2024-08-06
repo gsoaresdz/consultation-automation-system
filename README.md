@@ -1,63 +1,115 @@
-# **Projeto de Consulta Jurídica**
+### Automação de Processo de Consulta Jurídica
 
-## **Sobre o Projeto**
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/gsoaresdz/automcacao-processo-consulta-juridica?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/gsoaresdz/automcacao-processo-consulta-juridica?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/gsoaresdz/automcacao-processo-consulta-juridica?color=56BEB8">
+</p>
+<p align="center">
+  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-análises-realizadas">Funcionalidades</a> &#xa0; | &#xa0;
+  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-execução">Execução</a> &#xa0; | &#xa0;
+  <a href="#memo-estrutura-dos-dados">Estrutura dos Dados</a> &#xa0; | &#xa0;
+  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
+  <a href="https://github.com/gsoaresdz" target="_blank">Autor</a>
+</p>
+<br>
 
-O projeto de Consulta Jurídica é um script em Python que automatiza a pesquisa de processos jurídicos em um site fictício utilizando Selenium. Ele lê os dados dos processos de um arquivo Excel e preenche um formulário no site para buscar informações sobre cada processo.
+## **:dart: Sobre**
 
-## **Requisitos**
+Este repositório contém um projeto de automação para processos de consulta jurídica, focado em consultas de saldo de pagamento total de pessoas jurídicas (PJ) com base em datas. Utiliza Python para a implementação dos serviços e consultas.
 
-- Python 3.x
-- Selenium
-- Pandas
-- Google Chrome
+## **:sparkles: Funcionalidades**
 
-## **Instalação**
+:heavy_check_mark: **Funcionalidade 1**: Consulta de saldo de pagamento total de PJ com base em datas.
 
-1. Instale o Python 3.x em seu sistema operacional (caso não esteja instalado): **[https://www.python.org/downloads/](https://www.python.org/downloads/)**
-2. Instale o pacote Selenium:
+:heavy_check_mark: **Funcionalidade 2**: Mapeamento de DTOs para formatação de dados retornados.
 
-```python
-pip install selenium
+:heavy_check_mark: **Funcionalidade 3**: Uso de Lombok para construção de DTOs com a anotação @Builder.
+
+## **:rocket: Tecnologias**
+
+As seguintes ferramentas foram usadas neste projeto:
+
+- [Python](https://www.python.org/)
+- Flask
+- [Pandas](https://pandas.pydata.org/)
+- [Jupyter Notebook](https://jupyter.org/)
+
+## **:white_check_mark: Requerimentos**
+
+Antes de iniciar :checkered_flag:, você precisa ter [Python 3](https://www.python.org/downloads/) e Jupyter Notebook instalados.
+
+## **:checkered_flag: Execução**
+
+### Clonando o Repositório
+
+Primeiramente, clone o repositório do projeto para sua máquina local.
+
+```bash
+$ git clone https://github.com/gsoaresdz/automcacao-processo-consulta-juridica.git
 ```
 
-1. Instale o pacote Pandas:
+### Configuração e Execução do Projeto
 
-```python
-pip install pandas
+1. Navegue até o diretório do projeto:
+
+```bash
+$ cd automcacao-processo-consulta-juridica
 ```
 
-1. Baixe o ChromeDriver compatível com a versão do seu navegador Google Chrome: **[https://sites.google.com/a/chromium.org/chromedriver/downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)** e extraia o arquivo em uma pasta acessível.
+1. Crie um ambiente virtual e ative-o:
 
-## **Como Usar**
-
-1. Atualize a variável **`webdriver.Chrome()`** no código com o caminho para o ChromeDriver baixado. Por exemplo:
-
-```
-navegador = webdriver.Chrome(executable_path='caminho/para/o/chromedriver')
+```bash
+$ python3 -m venv venv
+$ source venv/bin/activate
 ```
 
-1. Prepare um arquivo Excel chamado **`Processos.xlsx`** com as informações dos processos a serem pesquisados. O arquivo deve ter as colunas "Cidade", "Nome", "Advogado" e "Processo". Salve o arquivo no mesmo diretório do script.
-2. Execute o script:
+1. Instale as dependências do projeto:
 
-```python
-python consulta_juridica.py
+```bash
+$ pip install -r requirements.txt
 ```
 
-1. Após a execução do script, um novo arquivo Excel chamado **`Processo Atualizado.xlsx`** será gerado no mesmo diretório, contendo os resultados das pesquisas.
+1. Execute o servidor Flask:
 
-## **Funcionamento**
+```bash
+$ flask run
+```
 
-O script realiza as seguintes ações:
+### Usando Jupyter Notebook
 
-1. Abre o navegador Google Chrome.
-2. Carrega o arquivo Excel **`Processos.xlsx`** e exibe seu conteúdo.
-3. Para cada linha da tabela de processos:
-    - Abre a página inicial do site de busca jurídica.
-    - Seleciona a cidade do processo.
-    - Preenche o formulário com os dados do processo (Nome, Advogado e Número).
-    - Clica em "Pesquisar".
-    - Confirma a pesquisa no alerta.
-    - Aguarda o resultado da pesquisa e atualiza o status do processo na tabela (Encontrado ou Não encontrado).
-4. Fecha o navegador.
-5. Exibe a tabela atualizada com os resultados das pesquisas.
-6. Salva a tabela atualizada em um novo arquivo Excel chamado **`Processo Atualizado.xlsx`**.
+1. Instale as dependências necessárias para Jupyter Notebook:
+
+```bash
+$ pip install jupyter
+```
+
+1. Inicie o Jupyter Notebook:
+
+```bash
+$ jupyter notebook
+```
+
+1. Abra o arquivo **main.ipynb** e execute as células de código para visualizar as análises e gráficos.
+
+## **:memo: Estrutura dos Dados**
+
+Os dados estão estruturados nas seguintes colunas:
+
+- id
+- nome
+- saldo
+- dataConsulta
+
+## **:memo: Licença**
+
+Este projeto está sob licença do MIT. Para obter mais detalhes, consulte o arquivo [LICENSE](LICENSE).
+
+Feito com :heart: by <a href="https://github.com/gsoaresdz" target="_blank">gsoaresdz</a>
+
+&#xa0;
+
+<a href="#top">De volta ao topo</a>
