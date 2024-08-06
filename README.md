@@ -4,7 +4,9 @@
   <a href="#checkered_flag-execução">Execução</a> &#xa0; | &#xa0;
   <a href="#memo-estrutura-dos-dados">Estrutura dos Dados</a> &#xa0; | &#xa0;
   <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/gsoaresdz" target="_blank">Autor</a></p><br>## **:dart: Sobre**
+  <a href="https://github.com/gsoaresdz" target="_blank">Autor</a></p><br>## 
+  
+## **:dart: Sobre**
 
 Este repositório contém um sistema para a automação da consulta de processos jurídicos. Ele permite a visualização e gestão de dados de processos de maneira estruturada e acessível.
 
