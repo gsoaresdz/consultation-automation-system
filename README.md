@@ -1,8 +1,8 @@
 <h1 align="center">Legal Consultation Automation System</h1>
 <p align="center">
-<img alt="Github top language" src="https://img.shields.io/github/languages/top/gsoaresdz/automcacao-processo-consulta-juridica?color=56BEB8">
-<img alt="Github language count" src="https://img.shields.io/github/languages/count/gsoaresdz/automcacao-processo-consulta-juridica?color=56BEB8">
-<img alt="Repository size" src="https://img.shields.io/github/repo-size/gsoaresdz/automcacao-processo-consulta-juridica?color=56BEB8">
+<img alt="Github top language" src="https://img.shields.io/github/languages/top/gsoaresdz/consultation-automation-system?color=56BEB8">
+<img alt="Github language count" src="https://img.shields.io/github/languages/count/gsoaresdz/consultation-automation-system?color=56BEB8">
+<img alt="Repository size" src="https://img.shields.io/github/repo-size/gsoaresdz/consultation-automation-system?color=56BEB8">
 </p>
 <p align="center">
 <a href="#dart-about">About</a> &#xa0; | &#xa0;
