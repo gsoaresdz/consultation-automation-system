@@ -39,7 +39,7 @@ Before starting :checkered_flag:, you need to have [Python](https://www.python.o
 First, clone the project repository to your local machine:
 
 ```bash
-$ git clone https://github.com/gsoaresdz/automcacao-processo-consulta-juridica.git
+$ git clone https://github.com/gsoaresdz/consultation-automation-system.git
 ```
 
 ### Installing Dependencies
